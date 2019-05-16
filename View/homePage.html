@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Takvim Uygulaması</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="../Resource/Css/style.css">
+    <script src="../Controllers/scripts.js" type="text/javascript"></script>
+    <script src="../Controllers/services.js" type="text/javascript"></script>
+    <script src="../Services/CalendarService.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <table id="tablo" class="table-condensed table-bordered table-striped">
+                    <thead id="takvim-head">
+                        <tr>
+                            <th colspan="7">
+                                <span class="btn-group">
+                                    <a class="btn" id="oncekiYil"><i class="icon-chevron-down"></i></a>
+                                    <a class="btn" id="oncekiAy"><i class="icon-chevron-left"></i></a>
+                                    <input type="submit" id="ayBilgisi" class="btn active" value="February"
+                                        style="font-size:25px">
+                                    <input type="submit" id="yilBilgisi" class="btn active" value="2012"
+                                        style="font-size:25px">
+                                    <a class="btn" id="sonrakiAy"><i class="icon-chevron-right"></i></a>
+                                    <a class="btn" id="sonrakiYil"><i class="icon-chevron-up"></i></a>
+                                </span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="baslik">Pzrt</th>
+                            <th class="baslik">Salı</th>
+                            <th class="baslik">Çarş</th>
+                            <th class="baslik">Perş</th>
+                            <th class="baslik">Cuma</th>
+                            <th class="baslik">Cmrt</th>
+                            <th class="baslik">Pzr</th>
+                        </tr>
+                    </thead>
+                    <!-- takvim elemanları buraya eklenecek -->
+                    <tbody id="takvim-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="buttons">
+        <input type="button" class="formBtn" onclick="noteMonthList()" id="ayNotlar" value="Ay Notları">
+        <input type="button" class="formBtn" onclick="noteYearList()" id="yilNotlar" value="Yıl Notları">
+        <input type="button" class="formBtn" onclick="noteYearFullList()" id="tumNotlar" value="Tüm Notlar">
+    </div>
+    <!-- <div id="container"> -->
+
+    <div id="containerInsert">
+        <!-- <h1>Notunuzu Giriniz</h1> -->
+        <form>
+            <textarea id="noteText" placeholder="Notunuzu Giriniz"></textarea>
+            <input class="formBtn" type="button" onclick="noteInsert();" value="Kaydet" />
+        </form>
+    </div>
+    <div id="contactListMonth">
+        <table id="contactListMonth_table">
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div id="contactListYear">
+        <table id="contactListYear_table">
+        </table>
+    </div>
+    <div id="contactListFullYear">
+        <table id="contactListFullYear_table">
+        </table>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>

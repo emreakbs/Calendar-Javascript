@@ -1,0 +1,173 @@
+#tablo {
+  margin: auto;
+  margin-top: 40px;
+  width: 1000px;
+  height: 500px;
+}
+.btn-group {
+  padding: 10px;
+}
+
+table {
+  font-size: 25px;
+  background-color: white;
+  text-align: center;
+}
+body {
+  background-image: url("../images/image.png");
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-attachment: fixed;
+}
+th {
+  background-color: #f8ab1bea;
+  font-weight: 100;
+}
+a {
+  width: 50px;
+  height: 30px;
+}
+input[type="submit"] {
+  width: 120px;
+  height: 60px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-top: auto;
+  border-top-left-radius: 20%;
+}
+.baslik {
+  background-color: #fafd4cb9;
+}
+.artikGun {
+  color: white;
+  font-style: italic;
+  background-color: #fadcdc;
+}
+.sutun {
+  color: #000000;
+}
+.sutun:hover {
+  /* color: #f80c82; */
+  /* border-color: #33aedb; */
+
+  /* border-radius: 20%;
+  border-style: solid;
+  border-color: #33aedb; */
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  font-size: 20pt;
+  color: rgb(69, 124, 160);
+}
+
+/* /////////////////////////////// */
+h1 {
+  margin: 0;
+}
+#contact {
+  margin: 20px auto;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background: teal;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  /* cursor: pointer; */
+  /* border: 1px solid white; */
+}
+
+#contact:hover {
+  background: #666;
+}
+#contact:active {
+  background: #444;
+}
+
+#containerInsert,
+#contactListMonth,
+#contactListYear,
+#contactListFullYear {
+  display: none;
+
+  border: 6px solid salmon;
+  padding: 2em;
+  width: 650px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+#containerInsert {
+  height: 300px;
+}
+input,
+textarea {
+  margin: 0.8em auto;
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  display: block;
+  width: 500px;
+  padding: 0.4em;
+}
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+.formBtn {
+  width: 100px;
+  display: inline-block;
+  background: #4c92ab;
+  color: #fff;
+  font-size: 15pt;
+  border: none;
+  height: 50px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+.formBtn:hover {
+  background-color: #33aedb;
+  /* width: 120px;
+  height: 60px; */
+}
+#buttons {
+  margin-left: 37%;
+}
+
+td {
+  width: 100px;
+}
+.txt_noteUpdate {
+  width: 400px;
+}
+.btn_noteTxtUpdate,
+.btn_noteCancel,
+.btn_noteListUpdate,
+.btn_noteListDelete {
+  width: 80px;
+  display: inline-block;
+  background: #4c92ab;
+  color: #fff;
+  font-size: 13pt;
+  border: none;
+  height: 25px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  margin-left: 4px;
+  margin-top: 3px;
+}
+.btn_noteTxtUpdate:hover,
+.btn_noteCancel:hover,
+.btn_noteListUpdate:hover,
+.btn_noteListDelete:hover {
+  /* height: 27px;
+  width: 83px; */
+  background-color: #33aedb;
+}
